@@ -5,3 +5,4 @@ RUN tar -xvf google-cloud-sdk-116.0.0-linux-x86_64.tar.gz
 RUN rm -rf google-cloud-sdk-116.0.0-linux-x86_64.tar.gz
 RUN /google-cloud-sdk/install.sh -q
 RUN /google-cloud-sdk/bin/gcloud -q components install alpha
+CMD /google-cloud-sdk/bin/gcloud
